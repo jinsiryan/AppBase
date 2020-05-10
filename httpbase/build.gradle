@@ -1,0 +1,39 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion deps.build_versions.target_sdk
+    buildToolsVersion deps.build_versions.build_tools
+
+    defaultConfig {
+        minSdkVersion deps.build_versions.min_sdk
+        targetSdkVersion deps.build_versions.target_sdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api deps.kotlin.stdlib
+    api deps.retrofit.gson
+    api deps.retrofit.rxjava
+    api deps.rxrelay
+    api deps.rxkotlin
+    api deps.rx_android
+    api deps.gson
+    api 'com.squareup.okio:okio:1.14.0'
+    api 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+}

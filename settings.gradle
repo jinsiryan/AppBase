@@ -1,0 +1,5 @@
+rootProject.name='appbase'
+include ':app'
+include ':uikit'
+include ':httpbase'
+include ':easy'
