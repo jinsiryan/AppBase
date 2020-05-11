@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 代码写的button背景色值 -->
+    <color name="orange_normal_color">#fda617</color>
+    <color name="orange_pressed_color">#ff8b00</color>
+    <color name="green_normal_color">#7ed321</color>
+    <color name="green_pressed_color">#61b900</color>
+
+    <color name="bule_normal_color">#459EF2</color>
+    <color name="bule_unebable_color">#805890ff</color>
+    <color name="bule_pressed_color">#9f5890ff</color>
+    <color name="bule_ripple_color">#5f5890ff</color>
+    <color name="button_disable_color">#FF9BA9B9</color>
+
+    <color name="red_normal_color">#ff664e</color>
+    <color name="red_pressed_color">#e8482f</color>
+    <color name="gray_normal_color">#cecece</color>
+    <color name="gray_pressed_color">#b5b5b5</color>
+
+    <color name="itemMask">#E0E0E0</color>
+</resources>
