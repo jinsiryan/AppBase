@@ -41,4 +41,6 @@ dependencies {
     api deps.fresco.webpsupport
     api deps.rxlifecycle.components
     api deps.kotlin.stdlib
+
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2'
 }

@@ -2,8 +2,8 @@ package com.appbase.uikit.cache.bindData;
 
 import android.view.View;
 
-import com.chad.library.adapter.base.BaseViewHolder;
-import com.kook.view.cache.IBindHolder;
+import com.appbase.uikit.cache.IBindHolder;
+import com.chad.library.adapter.base.viewholder.BaseViewHolder;
 
 import java.util.UUID;
 
