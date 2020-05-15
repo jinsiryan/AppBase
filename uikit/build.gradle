@@ -42,5 +42,12 @@ dependencies {
     api deps.rxlifecycle.components
     api deps.kotlin.stdlib
 
-    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2'
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.2'
+    api 'com.itingchunyu.badgeview:badgeview:1.0.5'
+    api 'com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x'
+    api 'org.sufficientlysecure:html-textview:3.9'
+    api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+    api 'com.qmuiteam:qmui:2.0.0-alpha08'
+    api 'com.github.zcweng:switch-button:0.0.3@aar'
+    api 'com.rxjava.rxlife:rxlife-x:2.0.0'
 }

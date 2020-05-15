@@ -14,5 +14,12 @@ object RxUtils {
             .unsubscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
     }
-
+    fun <T> observeBase(observable: Observable<BaseResponse<T>>): Observable<BaseResponse<T>>{
+        return observable
+            .subscribeOn(Schedulers.io())
+            .unsubscribeOn(Schedulers.io())
+            .flatMap(ResponseErrorFunc())
+            .onErrorResumeNext(HttpResponseFunc())
+            .observeOn(AndroidSchedulers.mainThread())
+    }
 }
