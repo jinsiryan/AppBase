@@ -1,4 +1,4 @@
-package com.boniu.uikit.utils
+package com.base.uikit.utils
 
 import java.util.regex.Matcher
 import java.util.regex.Pattern

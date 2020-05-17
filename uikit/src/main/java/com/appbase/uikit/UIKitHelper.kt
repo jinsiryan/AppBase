@@ -11,7 +11,9 @@ import rx_activity_result2.RxActivityResult
 Created by yanzs on 2020/5/10
  */
 object UIKitHelper {
+    lateinit var context: Context
     fun init(context: Context){
+        this.context = context
         Fresco.initialize(context)
         ExceptionHandler.init(context)
         PreferenceManager.init(context)

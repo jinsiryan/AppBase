@@ -1,19 +1,17 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+
     compileSdkVersion deps.build_versions.target_sdk
     buildToolsVersion deps.build_versions.build_tools
-
     defaultConfig {
-        applicationId deps.build_versions.applicationId
         minSdkVersion deps.build_versions.min_sdk
         targetSdkVersion deps.build_versions.target_sdk
-        versionCode deps.build_versions.versionCode
-        versionName deps.build_versions.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
     }
 
     buildTypes {
@@ -22,14 +20,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility = 1.8
-        targetCompatibility = 1.8
-    }
 
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api project(':easy')
+    api project(':uikit')
+    api project(':httpbase')
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    implementation(name: 'alipaySdk-15.7.5-20200422171619', ext: 'aar')
 }
