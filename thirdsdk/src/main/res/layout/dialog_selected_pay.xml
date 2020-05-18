@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.base.thirdsdk.view.PayItemView
+                android:id="@+id/pay_zfb"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:pay_check="true"
+                app:pay_icon="@mipmap/ic_zfb"
+                app:pay_name="支付宝支付" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#999999"/>
+            <com.base.thirdsdk.view.PayItemView
+                android:id="@+id/pay_wechat"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:pay_check="false"
+                app:pay_icon="@mipmap/ic_wechat"
+                app:pay_name="支付宝支付" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_pay"
+                android:layout_width="237dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="立即支付"
+                android:textColor="#ffffffff"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_green_bt_selector"
+                android:layout_marginBottom="14dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

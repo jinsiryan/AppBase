@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PayItemView">
+        <attr name="pay_name" format="string" />
+        <attr name="pay_price" format="string" />
+        <attr name="pay_check" format="boolean" />
+        <attr name="pay_icon" format="reference" />
+    </declare-styleable>
+</resources>

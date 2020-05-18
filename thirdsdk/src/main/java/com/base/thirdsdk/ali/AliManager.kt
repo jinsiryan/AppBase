@@ -16,7 +16,7 @@ class AliManager {
         }
     }
 
-    fun pay(orderInfo : String,context: Activity):Observable<PayResult>{
+    fun pay(orderInfo : String,context: Activity) : Observable<PayResult>{
        return Observable.just(orderInfo)
             .map {
                 val alipay = PayTask(context)
