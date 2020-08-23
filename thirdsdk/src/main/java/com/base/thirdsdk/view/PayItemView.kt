@@ -1,10 +1,10 @@
-package com.base.thirdsdk.view
+package com.boniu.shouyoujiasuqi.thirdsdk.view
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
 import android.widget.RelativeLayout
-import com.base.thirdsdk.R
+import com.boniu.shouyoujiasuqi.thirdsdk.R
 import kotlinx.android.synthetic.main.view_pay_item.view.*
 
 /**
@@ -49,5 +49,6 @@ class PayItemView @JvmOverloads constructor(
     fun setName(name:String?){
         tv_title.text = name
     }
+
 
 }

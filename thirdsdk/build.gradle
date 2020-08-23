@@ -29,4 +29,7 @@ dependencies {
     api project(':httpbase')
     api 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
     implementation(name: 'alipaySdk-15.7.5-20200422171619', ext: 'aar')
+    implementation  'com.umeng.umsdk:common:9.1.0'
+    implementation  'com.umeng.umsdk:asms:1.1.3'
+    implementation 'com.umeng.umsdk:crash:0.0.4'
 }

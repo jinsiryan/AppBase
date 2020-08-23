@@ -1,4 +1,4 @@
-package com.base.thirdsdk.ali
+package com.boniu.shouyoujiasuqi.thirdsdk.ali
 
 /**
 Created by yanzs on 2020/5/17
