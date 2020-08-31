@@ -37,24 +37,6 @@ public class PreferenceManager {
         return remove(SP_FILE, key);
     }
 
-//    public static <T> void saveList(String fileName, String key, List<T> value) {
-//        if (value == null) {
-//            value = new ArrayList<>();
-//        }
-//        String json = new Gson().toJson(value);
-//        save(fileName, key, json);
-//    }
-//
-//    public static <T> List<T> getList(String fileName, String key, Class<T> clazz) {
-//        try {
-//            Type listType = new TypeToken<List<T>>(){}.getType();
-//            String json = get(fileName, key, "[]");
-//            return new Gson().fromJson(json, listType);
-//        } catch (Exception e) {
-//
-//        }
-//        return null;
-//    }
 
     /**
      * 保存数据到 指定的file sp file

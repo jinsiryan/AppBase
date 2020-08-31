@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="loading">搜索中...</string>
+    <string name="loading">加载中...</string>
     <string name="load_no_data">无相关数据</string>
     <string name="load_fail">加载失败</string>
     <string name="waiting_sending">正在发送请求</string>
