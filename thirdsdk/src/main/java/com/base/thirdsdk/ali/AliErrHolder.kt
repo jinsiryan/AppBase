@@ -1,7 +1,7 @@
-package com.base.thirdsdk.ali
+package com.boniu.shouyoujiasuqi.thirdsdk.ali
 
 import android.content.Context
-import com.appbase.uikit.utils.ToastUtil
+import com.boniu.uikit.utils.ToastUtil
 
 /**
 Created by yanzs on 2020/5/17

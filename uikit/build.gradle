@@ -50,4 +50,5 @@ dependencies {
     api 'com.qmuiteam:qmui:2.0.0-alpha08'
     api 'com.github.zcweng:switch-button:0.0.3@aar'
     api 'com.rxjava.rxlife:rxlife-x:2.0.0'
+    api 'com.github.ly-android:PermissionUtils:1.0.3'
 }

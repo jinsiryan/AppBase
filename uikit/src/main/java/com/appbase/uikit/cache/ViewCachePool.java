@@ -1,7 +1,8 @@
 package com.appbase.uikit.cache;
 
-import com.kook.libs.utils.reference.WeakReferenceMap;
-import com.kook.libs.utils.reference.WeakValue;
+
+import com.appbase.uikit.utils.reference.WeakReferenceMap;
+import com.appbase.uikit.utils.reference.WeakValue;
 
 import java.util.Collection;
 

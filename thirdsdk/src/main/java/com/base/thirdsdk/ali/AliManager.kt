@@ -1,7 +1,8 @@
-package com.base.thirdsdk.ali
+package com.boniu.shouyoujiasuqi.thirdsdk.ali
 
 import android.app.Activity
-import android.content.Context
+import android.util.Log
+import com.alipay.sdk.app.EnvUtils
 import com.alipay.sdk.app.PayTask
 import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
@@ -12,6 +13,7 @@ Created by yanzs on 2020/5/17
 class AliManager {
     companion object{
         val instance by lazy(mode = LazyThreadSafetyMode.SYNCHRONIZED) {
+//            EnvUtils.setEnv(EnvUtils.EnvEnum.SANDBOX);
             AliManager()
         }
     }
